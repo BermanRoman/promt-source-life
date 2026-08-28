@@ -2,7 +2,7 @@
 
 Мастер-промт превращает Claude в систему управления жизнью: доводит человека от расплывчатого «хочу, чтобы стало лучше» до конкретной цели и ежедневного управления ею.
 
-Работает в паре с методичками и дневником, которые лежат рядом в репозитории.
+Работает в паре с методичками и дневником: часть лежит здесь, часть подключается из соседних репозиториев.
 
 Ещё нужен коннектор Google Диска с правами на создание и изменение файлов, так как справку и дневник промт ведёт файлами и дописывает их сам.
 
@@ -74,19 +74,35 @@ _Промт ещё в работе, структура меняется._
 
 Формулировки он берёт из методичек, а не из памяти, поэтому без них не стартует.
 
-### Что лежит в репозитории
+### Что нужно для работы
 
-- **master-prompt.md** — сама система, идёт в инструкции проекта.
-- **diary.md** — шаблон дневника: кто ты, цель, настройки записей, регулярные действия, записи, наблюдения, пропуски.
-- **methodology.md** — управленческий аппарат для разбора ситуаций и диагностики.
-- **behavior-methodology.md** — привычки, состояния, страх, постановка цели и нормы.
-- **spin-methodology.md** — вовлечение на входе и пересборка.
-- **hiring-methodology.md** — ветка поиска работы.
-- **prompt-hiring.md** — отбор со стороны работодателя.
-- **relationships-methodology.md** — ветка отношений.
-- **audience-research.md** — подветка «нет продукта».
-- **spin-training.md** — подветка «не умеет продавать».
-- **methodology-copywriting.md** — стиль общения системы.
+Здесь лежит только то, что больше нигде не используется.
+
+Остальные методички живут в своих репозиториях и обновляются отдельно, поэтому копий тут нет.
+
+**Лежит здесь**
+
+- **[master-prompt.md](https://github.com/BermanRoman/promt-source-life/blob/main/master-prompt.md)** — сама система, идёт в инструкции проекта.
+- **[behavior-methodology.md](https://github.com/BermanRoman/promt-source-life/blob/main/behavior-methodology.md)** — привычки, состояния, страх, постановка цели и индивидуальные нормы.
+- **[diary.md](https://github.com/BermanRoman/promt-source-life/blob/main/diary.md)** — шаблон дневника: кто ты, цель, настройки записей, регулярные действия, записи, наблюдения, пропуски.
+
+**Нужно подключить обязательно**
+
+- **[management-methodology.md](https://github.com/BermanRoman/prompt-management/blob/main/management-methodology.md)** — управленческий аппарат для разбора ситуаций и диагностики.
+- **[spin-methodology.md](https://github.com/BermanRoman/prompt-spin-training/blob/main/spin-methodology.md)** — вовлечение на входе и пересборка цели.
+- **[methodology-copywriting.md](https://github.com/BermanRoman/promt-copywriting/blob/main/methodology-copywriting.md)** — стиль общения системы.
+
+Без этих трёх промт не работает ни в одной ветке, так как на них держатся разбор, вовлечение и речь.
+
+**Нужно подключить под ветки**
+
+- **[job-search-methodology.md](https://github.com/BermanRoman/prompt-job-search/blob/main/job-search-methodology.md)** — ветка найма со стороны соискателя.
+- **[relationships-methodology.md](https://github.com/BermanRoman/prompt-relationships/blob/main/relationships-methodology.md)** — ветка отношений.
+- **[prompt-hiring.md](https://github.com/BermanRoman/promt-hiring-staff/blob/main/prompt-hiring.md)** — отбор со стороны работодателя.
+- **[audience-research.md](https://github.com/BermanRoman/prompt-audience-research/blob/main/audience-research.md)** — подветка «нет продукта».
+- **[spin-training.md](https://github.com/BermanRoman/prompt-spin-training/blob/main/spin-training.md)** — подветка «не умеет продавать».
+
+Эти добавляй тогда, когда до ветки дойдёт дело, так как грузить всё сразу незачем.
 
 ### Чего промт не делает
 
@@ -112,6 +128,6 @@ _Промт ещё в работе, структура меняется._
 
 2. Создай новый проект в Claude.
 3. Открой файл **[master-prompt.md,](https://github.com/BermanRoman/promt-source-life/blob/main/master-prompt.md)** скопируй его содержимое кнопкой «Copy» и вставь в поле «Инструкции» проекта.
-4. Скачай из этого репозитория методички и добавь их в проект как документы в пространство файлов.
+4. Скачай **behavior-methodology.md** отсюда и три обязательные методички из соседних репозиториев, добавь их в проект как документы в пространство файлов.
 5. Скачай **[diary.md](https://github.com/BermanRoman/promt-source-life/blob/main/diary.md)** и добавь туда же, так как по нему промт ведёт записи.
 6. Напиши в чате проекта сообщение: _«Начинаем работу по системе управления жизнью, согласно заложенной в тебя инструкции и методичкам в пространстве файлов»_

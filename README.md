@@ -104,6 +104,33 @@ _Промт ещё в работе, структура меняется._
 
 Эти добавляй тогда, когда до ветки дойдёт дело, так как грузить всё сразу незачем.
 
+**Забрать всё одной командой**
+
+Работаешь через Claude Code или Codex — скопируй это в терминал, и все файлы окажутся в папке `source-life` рядом:
+
+```bash
+mkdir -p source-life && cd source-life
+base=https://raw.githubusercontent.com/BermanRoman
+for f in \
+  promt-source-life/main/master-prompt.md \
+  promt-source-life/main/behavior-methodology.md \
+  promt-source-life/main/diary.md \
+  prompt-management/main/management-methodology.md \
+  prompt-spin-training/main/spin-methodology.md \
+  promt-copywriting/main/methodology-copywriting.md \
+  prompt-job-search/main/job-search-methodology.md \
+  prompt-relationships/main/relationships-methodology.md \
+  promt-hiring-staff/main/prompt-hiring.md \
+  prompt-audience-research/main/audience-research.md \
+  prompt-spin-training/main/spin-training.md
+do curl -fsSL -O "$base/$f"; done
+ls
+```
+
+Команда тянет всё сразу, включая ветки, так как на диске они не мешают.
+
+В проект грузишь только обязательные, а ветки — когда до них дойдёт дело.
+
 ### Чего промт не делает
 
 Не назначает лечение и дозы, не отменяет назначенное врачом.

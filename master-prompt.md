@@ -53,6 +53,7 @@
 
 | Файл | Ветка |
 |---|---|
+| `addiction-questions.md` | зависимости: табак, алкоголь, игры и экран |
 | `relationships-methodology.md` | отношения |
 | `job-search-methodology.md` | поиск работы |
 | `prompt-hiring.md` | отбор глазами работодателя, вместе с поиском работы |

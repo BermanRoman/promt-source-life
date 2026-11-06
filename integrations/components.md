@@ -14,7 +14,7 @@
 |---|---|---|
 | `core` | `prompt-management` | `management-methodology.md`: полные нужные разделы аппарата управления; авторский голос и текстовый процесс управления не подключаются |
 | `relationships` | `prompt-relationships` | `relationships.md`, `references/boundaries.md`, затем маршрут `workflow.md` и рамка/полный соответствующий блок `relationships-methodology.md`; профили `roles/reviewer.md` и `roles/reader.md` по условиям workflow |
-| `job-search` | `prompt-job-search` | `job-search.md`, `contracts/work-evidence-v1.md`; адресное предложение — `workflow.md` и полные соответствующие карточки `job-search-methodology.md`; резюме — `resume.md`; делегированная кампания — `campaign.md` |
+| `job-search` | `prompt-job-search` | `job-search.md`, `contracts/work-evidence-v1.md`; адресное предложение — `workflow.md` и полные соответствующие карточки `job-search-methodology.md`; резюме — `resume.md`; делегированная кампания — `campaign.md`; подбор компаний — `company-discovery.md`, таблица и инструменты по указанным там CLI |
 | `hiring` | `promt-hiring-staff` | `prompt-hiring.md`, `contracts/work-evidence-v1.md`, `workflow.md`, полные нужные шаги `references/methodology.md`; площадка — `references/hh.md`, расчёт — `docs/tools.md` и `scripts/workload.py` |
 | `audience` | `prompt-audience-research` | `audience-research.md`, `evidence-contract.md`, применимый маршрут `workflow.md`; первое прохождение этапа читает его полный `references/00-context.md` … `references/06-landing.md` |
 | `sales-training` | `prompt-spin-training` | Полные `spin-training.md` и соответствующий блок `spin-methodology.md`, включая примеры, задания и критерии; правила адаптации ниже обязательны |
@@ -95,7 +95,21 @@
 
 В кампании отдельно читай `campaign.md`, `resume.md`, `docs/channels-research.md`, нужный профиль `docs/ats-research.md`, шаблоны и `scripts/README.md` перед использованием `scripts/job_ledger.py`.
 
-Кампания выполняет внешние чтения и действия поддерживаемым браузером в сессии пользователя; локальный журнал хранит очередь, хеши, запреты и резервирования, без сети и отправки.
+HH, почта, ATS, сайты и карты работают через поддерживаемый браузер в сессии пользователя; отдельное согласованное исключение — Checko API по `company-discovery.md` и `docs/checko-cli.md` с приватным кэшем и устойчивым бюджетом.
+
+Порядок кампании: согласованный пакет опубликованных вакансий, затем компании без найденной подходящей вакансии; ответов первой волны ждать не требуется.
+
+Исходный профиль включает навыки, опыт, условия, город и дорогу; уже известные сведения не спрашиваются заново, ссылка от человека добавляет кандидата и не завершает подбор.
+
+Только явное поручение «эта компания и никакие другие» сужает поиск, сохраняя проверки и историю.
+
+Для подбора читай `company-discovery.md` и `docs/company-research.md`: API-проверка всех найденных организаций → сайты → фактическое место и дорога по картам → опубликованный деловой контакт → предложение.
+
+Перед применением таблицы читай `docs/company-table-cli.md` и `docs/company-screen-cli.md`; `scripts/company_table.py` и `scripts/job_ledger.py` используют одну приватную SQLite-базу, хранящую карточки, очередь, хеши, запреты и резервирования.
+
+Перед новым первым обращением обязательны текущая карточка, вычисленное решение, ревью пакета и полномочия; уникальный ИНН и общая история компании блокируют повтор независимо от волны, роли, адресата, канала и текста.
+
+Локальные таблица и журнал не отправляют сообщения; недоступность Checko или неизвестные результаты проверок не заменяются положительной оценкой.
 
 Неизвестный исход отправки блокирует повтор до сверки, отказ и запрет контакта нельзя обходить другим каналом; актуальность полномочий проверяется перед действием.
 

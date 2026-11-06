@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "routes": {
+    "core": {
+      "repository": "prompt-management",
+      "revision": "cc8b0355c3d73daccaf9e7c8bc740a817de44a6e",
+      "files": {
+        "management-methodology.md": "471e97424e7c597eb76896c2ef80ea6b29249d295a89c7d611bc96dcbbbf4370"
+      }
+    },
+    "relationships": {
+      "repository": "prompt-relationships",
+      "revision": "4f4429a5f603498e7bd278f9b1c8dc8e4125e30d",
+      "files": {
+        "relationships.md": "65fb920ca7c6ea8c81a4a167e3110086c07fc26ddee6d2e21060fa53bb81f9b7",
+        "relationships-methodology.md": "e2be1c42a86a8d13b69262ee56e76bbecd986d157dd319408199e1c373aaf720",
+        "workflow.md": "505e4e42d94b732a4b71f203e2c997d62f32ffcca211bc7c0b8b8b664c98e018",
+        "references/boundaries.md": "afcb45d51b778e372e2bac56230ef7b8654140f875249dab36c8bf2dfc355fa7",
+        "roles/reader.md": "ae100245f0943866d9c99ac1b6595c51c17cf23c3e24759882da3a543f4b3b83",
+        "roles/reviewer.md": "6eb868dcfb32d4e122131d343b9721044b1607c8f6a47dd8d10afbe4ddefe059",
+        "templates/state.md": "416c7b171c77a00bf89fc6e17fa1d9663187653fcffc5546b45dd1fad5f79fa5"
+      }
+    },
+    "job-search": {
+      "repository": "prompt-job-search",
+      "revision": "60711ba802a8484262d8db3b86b01eca3c71a7e5",
+      "files": {
+        "job-search.md": "425184987a8a06d830649012fc38eb45114d84823bb91e6e2ee139f491bf3658",
+        "job-search-methodology.md": "9a0ab6c8ff37ac0b09c51640071dcbb1f02e8aaa0cbf8a3d3253ff72fb4ca677",
+        "workflow.md": "04feaf2342af4737d7ecfd08c8779b9b66932c564ea0a4bc6a676f9af9af5eff",
+        "campaign.md": "dd1c42a533596d29ff347ea18e154f6d40c200432452b0f6fd5dc09b3389e59e",
+        "resume.md": "ce61f6912e1f111ff2018feeaecf32b0e72c8bd1bf2c4532c2289849b3474d01",
+        "contracts/work-evidence-v1.md": "5a6b3d15565b6819823465ceb628075fac3a9b6c5ff4c865d1793fd6b23d4f90",
+        "templates/task.md": "e3ae4ccaa108069aa0c2a6083d0f615e8783fd2efad6dce4d050078001b70e87",
+        "templates/campaign.md": "711fef03ab7985aa5f319a28d9e271573ae7eac2d03f2609db4f46ca460f132f",
+        "templates/resume-facts.md": "f67f24ea287b0bcb955cbb89c4c41aa0ed0f539e31e128e03141c7c4540768b2",
+        "roles/reviewer.md": "c92ea4202b22d3d1c1acaa42f64710228ca78b9bced85fe19a2db43c92291c93",
+        "roles/target-reader.md": "1d0ad3191c8a26f45c0bb2f18a0274eb874b34ece06c1ce611c64768def287e3",
+        "scripts/job_ledger.py": "9396c9dbfb38d9d737c5593f89c19b3c8f27d750603dc9cf1ccb3e1ee578b64c",
+        "scripts/README.md": "aa7627acd1dce8da59c4c19768a99f32df5112b1d5859a5ef51db46a59bece34",
+        "docs/ats-research.md": "9e391c4ce8a9fdcc06dbcd0c96e46a8f910ffdd1b8c0106aba6e3cf3caa1b5ce",
+        "docs/channels-research.md": "5df6d29e0a1e710bafce6c48db1dc1ae310e80c28043ddc1ca900c4e09f05ac3"
+      }
+    },
+    "hiring": {
+      "repository": "promt-hiring-staff",
+      "revision": "4c981ee7b42f3c454772cfca2085794fb498b11c",
+      "files": {
+        "prompt-hiring.md": "f5ea211efe30c6be47e0502c929acfa4847a6e903a4d4a476453832e991fdcef",
+        "workflow.md": "558887a8c9dc8e97cd1dc43c7077abb620939b7b53b20b94535ec5c2db9870c9",
+        "references/methodology.md": "684db7a579a512a147e1a5720eee8c5a4fcf11c0df0cf0b8ca4b541166de6fa4",
+        "references/hh.md": "cdad89d8f7950b9abb6dac1cd80c92c83089dbb78c80c73c72f2c2bc17f8fb58",
+        "contracts/work-evidence-v1.md": "5a6b3d15565b6819823465ceb628075fac3a9b6c5ff4c865d1793fd6b23d4f90",
+        "templates/task.md": "e71aa5dcc4d8af6de381b95fbf7c21ad9820b6e0024f9fbb8db72e697b125ae9",
+        "roles/writer.md": "f27a6b4b3b9b7efa38f5ae238fe52da2b310e50ed7a7c4799625d2eff77273bb",
+        "roles/reviewer.md": "6b673f663f075dd70006cfa7ea1e7733ec4f7effb705288846d4f8a475ddc74a",
+        "roles/target-reader.md": "15151d15542f424552d833dbc753b2a70ff2b1555545cb20bfd5da9731c28f9e",
+        "scripts/workload.py": "7ef2722ae466cb55583de4752b8f036ee61ce5c8a070f9951241b4e23257b42a",
+        "scripts/check_pair.py": "427c0fceaa2d3ec9a3d406ba0a97eb5f55a90b3e1664df642369f47bef652d66",
+        "docs/tools.md": "25f619453a9b78ac07eda750c5fa6f4ede46b0ad18780e3fb1225e124e0c7788",
+        "docs/copywriting.md": "fb7b135cdcd71f5ff7134d29fb2c455b95eb4e587b705f28c43fc34de57a4234"
+      }
+    },
+    "audience": {
+      "repository": "prompt-audience-research",
+      "revision": "375c633fe7bfab7dda333824ea03a44f30debcb4",
+      "files": {
+        "audience-research.md": "2ad9d30b2beef3ae85f06ae3b7e890c18d3b291abe6c1c5338dd03d62b361578",
+        "workflow.md": "f42d1eb54b7a2bb7e0a6aa9cdea25a9a4e6d54d9b0e6425befff2fc9f77d089b",
+        "evidence-contract.md": "226a9e2b4d0fe3ca3d3c8a9cfa20f941a0344d0254a925cc5cdbab60d976a23c",
+        "templates/state.md": "a3582ffed38dd24036fac8cb37934b4491ab35af2000ed85d9ff79e0f1a714cf",
+        "roles/research-reviewer.md": "2619ebe4df5cb17e3fda3356539e46b6c9f71c79b5a57eb24f016ccd26d01718",
+        "references/00-context.md": "3ddf0b4780189f05a9e6342b210e37fcadfa97d4ca411af23979ff96fde73248",
+        "references/01-segment.md": "c0ae2540cf23be61375488d0c33ed8cb29483dc129887d750dc65818a7d24c5b",
+        "references/02-portrait.md": "db4cc9c4bfd8a5e2333ef8855f83828d13fa824247b03eb95ce945afc36058b2",
+        "references/03-custdev.md": "4a4b0877641dbea9d8d8aef7a9bea4374e09074905892fc5d82f36a47b315871",
+        "references/04-meanings.md": "e1de27ab8251d68bff04d4b7d37375ced877014eb22d4f5579fdbefd0b08a120",
+        "references/05-offer.md": "5ea20b092ae099728454b5b2c692a3e4cba49c71650fb4e908ac0c1480b40059",
+        "references/06-landing.md": "31a9321635ad5f60a0b4c5472508b73e43e17435acf1b9212a25cd8461123db6"
+      }
+    },
+    "sales-training": {
+      "repository": "prompt-spin-training",
+      "revision": "9d5b9673c32739c06c0bd322bf584bbe913a59ba",
+      "files": {
+        "spin-training.md": "336ca6ed26258604f6f5c138ec4f5cc3c06108c58a87802cdfde42ccd9e4748a",
+        "spin-methodology.md": "ac1d1f2baf5e170eeafd896e5b99d7e81f6d533172b9b58994f65fc2829a4d37"
+      }
+    }
+  }
+}
